@@ -2,7 +2,7 @@ import { createHash, randomBytes } from 'node:crypto';
 import { hash as argonHash, verify as argonVerify } from '@node-rs/argon2';
 import type { FastifyReply, FastifyRequest } from 'fastify';
 import { env } from '../config/env.js';
-import { prisma } from './prisma.js';
+import { prisma } from './db.js';
 import { AppError } from './errors.js';
 
 export const SESSION_COOKIE = 'pbt_session';

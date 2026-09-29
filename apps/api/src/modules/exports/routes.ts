@@ -1,5 +1,5 @@
 import type { FastifyPluginAsync } from 'fastify';
-import { prisma } from '../../lib/prisma.js';
+import { prisma } from '../../lib/db.js';
 import { AppError } from '../../lib/errors.js';
 import { currentUser, requireAuth } from '../../lib/auth.js';
 import { env } from '../../config/env.js';

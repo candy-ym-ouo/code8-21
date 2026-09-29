@@ -1,7 +1,7 @@
 import type { FastifyPluginAsync } from 'fastify';
 import { z } from 'zod';
 import { MOOD_TAGS, type MoodTag } from '@paper-book-traces/shared';
-import { prisma } from '../../lib/prisma.js';
+import { prisma } from '../../lib/db.js';
 import { AppError, zodFields } from '../../lib/errors.js';
 import { currentUser, requireAuth } from '../../lib/auth.js';
 import { isStrictlyEditable, normalizeMoodTags, normalizeText } from '../../lib/domain.js';

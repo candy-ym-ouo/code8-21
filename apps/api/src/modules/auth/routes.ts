@@ -1,6 +1,6 @@
 import type { FastifyPluginAsync } from 'fastify';
 import { z } from 'zod';
-import { prisma } from '../../lib/prisma.js';
+import { prisma } from '../../lib/db.js';
 import { AppError, zodFields } from '../../lib/errors.js';
 import {
   createSession,

@@ -1,6 +1,6 @@
 import { buildApp } from './app.js';
 import { env } from './config/env.js';
-import { prisma } from './lib/prisma.js';
+import { prisma } from './lib/db.js';
 
 async function main(): Promise<void> {
   const app = await buildApp();

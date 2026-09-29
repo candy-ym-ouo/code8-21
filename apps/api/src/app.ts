@@ -4,7 +4,7 @@ import cors from '@fastify/cors';
 import rateLimit from '@fastify/rate-limit';
 import { ZodError } from 'zod';
 import { env } from './config/env.js';
-import { prisma } from './lib/prisma.js';
+import { prisma } from './lib/db.js';
 import { AppError, mapPrismaError, sendError, zodFields } from './lib/errors.js';
 import { authRoutes } from './modules/auth/routes.js';
 import { bookRoutes } from './modules/books/routes.js';

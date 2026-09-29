@@ -1,7 +1,7 @@
 import type { FastifyPluginAsync } from 'fastify';
 import { Prisma } from '@prisma/client';
 import { ACTIVITY_ACTIONS, ACTIVITY_ENTITY_TYPES, type ActivityAction, type ActivityEntityType } from '@paper-book-traces/shared';
-import { prisma } from '../../lib/prisma.js';
+import { prisma } from '../../lib/db.js';
 import { AppError } from '../../lib/errors.js';
 import { currentUser, requireAuth } from '../../lib/auth.js';
 import { optionalDate, paginationFromQuery, parseId } from '../../lib/http.js';
